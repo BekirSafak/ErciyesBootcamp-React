@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function NavbarMenu() {
     return (
@@ -7,8 +8,8 @@ function NavbarMenu() {
                 <div className=''>LogoImg</div>
                 <div>
                     <ul className='flex gap-4'>
-                        <li>Home</li>
-                        <li>Product Details</li>
+                        <li><Link to={'/'}>Home</Link></li>
+                        <li><Link to={'/product'}>Product Details</Link></li>
                     </ul>
                 </div>
             </nav>
